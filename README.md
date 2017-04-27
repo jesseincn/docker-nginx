@@ -1,0 +1,1 @@
+docker-nginx add logrotate
