@@ -9,10 +9,6 @@ ARG CONTAINER_GID=1000
 # install dev tools
 RUN apk add --no-cache logrotate tzdata bash && \
     cp -r -f /usr/share/zoneinfo/Hongkong /etc/localtime && \
-    export CONTAINER_USER=logrotate && \
-    export CONTAINER_GROUP=logrotate && \
-    addgroup -g $CONTAINER_GID logrotate && \
-    adduser -u $CONTAINER_UID -G logrotate -h /usr/bin/logrotate.d -s /bin/bash -S logrotate && \
     apk add --update \
       tar \
       gzip \
