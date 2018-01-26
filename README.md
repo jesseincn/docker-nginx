@@ -1,4 +1,4 @@
-docker-nginx add logrotate
-=
+## docker-nginx add logrotate
+
 logrotate congfig path:  
-/etc/logrotate.d/
+`/etc/logrotate.d/`
